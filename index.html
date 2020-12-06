@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Klaus's personal website</title>
+    <script type="text/javascript">
+        window.onload = calculate_age;
+        function calculate_age() {
+            var today = new Date();
+            var birthdate = new Date('1957-06-07');
+            var age = today.getFullYear() - birthdate.getFullYear();
+            var m = today.getMonth() - birthdate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
+                age--;
+            }
+            document.getElementById('age').innerHTML = document.getElementById('age').innerHTML.replace('xxxxx', age);
+        }              
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><img src="images/klaus.png" alt="me"></td>
+            <td>
+                <h1>Klaus</h1>
+                <p id="age"> I am xxxxx years old and work for the company
+                    <a href="https://www.gebr-heinemann.de/heu/en">Gebr. Heinemann</a>
+                    as SAP EWM consultant and ABAP developer. In my spare time I like to go jogging and operate my
+                    own <a href="https://www.terra-runner.de">internet server</a>, where I blog about
+                    topics like running, smart home and Linux. Nothing special and also not very consistent
+                    regarding the publication interval of the blogs. Furthermore I am programming on my smart
+                    home and constantly expanding it with crazy gadgets.😎
+                </p>
+                <p>
+                    I'm not too much into HTML/CSS/JS, therefore I decided to take this course.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="my_hr"><img src="images/telegrams.gif" alt="" style="width: 80px;height: auto;vertical-align: bottom;">
+        🔘➖➖🔘&nbsp;&nbsp;🔘➖🔘&nbsp;&nbsp;➖➖➖&nbsp;&nbsp;➖➖🔘&nbsp;&nbsp;🔘➖🔘&nbsp;&nbsp;🔘➖&nbsp;&nbsp;➖➖&nbsp;&nbsp;➖➖&nbsp;&nbsp;🔘&nbsp;&nbsp;🔘➖🔘
+    </p>
+    <br>
+    <div class="center">
+        <h1>Work Experience</h1>
+        <table class="mytable">
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Company</th>
+                    <th>Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1993 - 2001</td>
+                    <td>Gebr. Heinemann SE & Co. KG</td>
+                    <td>AS/400 RPG IV Developer for ERP & cashier systems</td>
+                </tr>
+                <tr>
+                    <td>2002 - 2002</td>
+                    <td>Freelancer</td>
+                    <td>AS/400 RPG IV Developer for customs apps (NCTS, ZAPP)</td>
+                </tr>
+                <tr>
+                    <td>2003 - 2009</td>
+                    <td>Gebr. Heinemann SE & Co. KG</td>
+                    <td>AS/400 RPG IV Developer for customs apps (AES) & interfaces to customers and suppliers </td>
+                </tr>
+                <tr>
+                    <td>2010 - 2012</td>
+                    <td>Gebr. Heinemann SE & Co. KG</td>
+                    <td>SAP PI Specialist for data exchange with customers and suppliers (IDOC, XPATH/XML, EDIFACT)</td>
+                </tr>
+                <tr>
+                    <td>2013 - 2020</td>
+                    <td>Gebr. Heinemann SE & Co. KG</td>
+                    <td>SAP EWM Consultant and ABAP Developer for material flow control in our warehouse</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <p class="my_hr"><img src="images/telegrams.gif" alt="" style="width: 80px;height: auto;vertical-align: bottom">
+            🔘➖➖🔘&nbsp;&nbsp;🔘➖🔘&nbsp;&nbsp;➖➖➖&nbsp;&nbsp;➖➖🔘&nbsp;&nbsp;🔘➖🔘&nbsp;&nbsp;🔘➖&nbsp;&nbsp;➖➖&nbsp;&nbsp;➖➖&nbsp;&nbsp;🔘&nbsp;&nbsp;🔘➖🔘
+        </p>
+        <br>
+        <h1>Programming Languages</h1>
+        <!-- Mit WIN + . Emoji einfügen -->
+        <table class="mytable">
+            <tr>
+                <td>ABAP</td>
+                <td>🟡🟡🟡🟡🟡</td>
+                <td>RPG IV</td>
+                <td>🟡🟡🟡🟡🟡</td>
+            </tr>
+            <tr>
+                <td>COBOL</td>
+                <td>🟡🟡🟡🟡⚫</td>
+                <td>Python</td>
+                <td>🟡🟡⚫⚫⚫</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>🟡🟡🟡🟡⚫</td>
+                <td>C#</td>
+                <td>🟡🟡⚫⚫⚫</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>🟡🟡🟡⚫⚫</td>
+                <td>Javascript</td>
+                <td>🟡⚫⚫⚫⚫</td>
+            </tr>
+        </table>
+        <br>
+        <p class="my_hr"><img src="images/telegrams.gif" alt="" style="width: 80px;height: auto;vertical-align: bottom">
+            🔘➖➖🔘&nbsp;&nbsp;🔘➖🔘&nbsp;&nbsp;➖➖➖&nbsp;&nbsp;➖➖🔘&nbsp;&nbsp;🔘➖🔘&nbsp;&nbsp;🔘➖&nbsp;&nbsp;➖➖&nbsp;&nbsp;➖➖&nbsp;&nbsp;🔘&nbsp;&nbsp;🔘➖🔘
+        </p>
+        <br>
+        <a href="hobbies.html">My hobbies</a>
+        &nbsp;&nbsp;🔵&nbsp;&nbsp;
+        <a href="contact.html">Contact me</a>
+    </div>
+</body>
+</html>
