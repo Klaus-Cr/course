@@ -1,0 +1,80 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: mediumaquamarine; 
+}
+
+p {
+    text-align: justify;
+}
+
+h1,h3  {
+    color: teal;
+}
+th,td {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.my_hr2{
+  background-color: black
+}
+.my_hr {
+    text-align: center;
+    font-size: 3mm ;
+    color: transparent;
+    text-shadow: 0 0 0 rgb(55, 105, 161);
+}
+.hobby {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mytable {
+    background-color: rgb(240, 210, 164);
+    box-shadow: 3px 3px 3px rgb(90, 89, 75);
+    border-radius: 15px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+div.relative {
+  position: relative;
+  width: auto;
+  height: 200px;
+}
+
+div.absolute1 {
+    position: absolute;
+    top: 25%;
+    right: 60%;
+}
+
+div.absolute2 {
+    position: absolute;
+    top: 5%;
+    right: 50%;
+}
+
+div.absolute3 {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+}
+div.absolute4 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+}
+@font-face {
+    font-family: "ComicBookFun-Regular";
+    src: url("../fonts/ComicBookFun.ttf") format("truetype"),
+         url("../fonts/ComicBookFun.woff2") format("woff2");  /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
